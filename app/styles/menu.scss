@@ -1,0 +1,14 @@
+.menu {
+  .links {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    a {
+      float: left;
+      display: block;
+      height: 75px;
+      width: 100%;
+    }
+  }
+}

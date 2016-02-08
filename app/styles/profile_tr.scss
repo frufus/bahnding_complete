@@ -1,0 +1,63 @@
+.profile_tr {
+
+  .avatar {
+    position: absolute;
+    height: 105px;
+    width: 105px;
+    top: 101px;
+    left: 44px;
+    background-image: url('../images/Profile/avatar2.jpg');
+    background-size: cover;
+    border-radius: 100%;
+    border: 5px solid #ffffff;
+    transition: all 0.5s linear;
+    cursor: pointer;
+
+    &.big {
+      top: 20px;
+      left: 0;
+      height: 375px;
+      width: 375px;
+      border-radius: 0%;
+    }
+
+    .overlay {
+
+    }
+  }
+  .top {
+    width: 100%;
+    height: 587px;
+    background-image: url('../images/Profile/Profil_TR_top.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .button-wrapper {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    perspective: 800px;
+    overflow: hidden;
+
+    audio {
+      display: none;
+    }
+    .button {
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('../images/Profile/Profil_TR_button.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      transition: all 1.5s cubic-bezier(0.115, 0.5, 0.455, 1);
+      backface-visibility: visible;
+
+      &.ripped {
+        transform: translate3d(0px,150px,0) rotate3d(0, 0,1, 20deg);
+      }
+    }
+  }
+}

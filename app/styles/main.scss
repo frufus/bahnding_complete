@@ -1,0 +1,264 @@
+@import 'reset';
+@import 'animation';
+@import 'alert';
+@import 'register';
+@import 'profile_tr';
+@import 'profile';
+@import 'profile_edit';
+@import 'add_route';
+@import 'login';
+@import 'filter';
+@import 'menu';
+@import 'search';
+@import 'tr';
+@import 'set_train';
+@import 'my_routes';
+
+body {
+  *{
+    font-family: Avenir;
+  }
+  background-color: #ededed;
+}
+
+.container {
+  position: relative;
+  margin: 100px auto;
+  overflow: hidden;
+  width: 553px;
+  height: 971px;
+
+  .wrapper {
+    position: absolute;
+    left: 84px;
+    top: 108px;
+    width: 375px;
+    height: 667px;
+    overflow: hidden;
+    border: 1px solid black;
+    z-index: 9999;
+
+    .sysbar {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 20px;
+      background-image: url("../images/Sysbar.png");
+      background-size: cover;
+      z-index: 99999;
+    }
+
+    .back {
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 30px;
+      top: 30px;
+      left: 7px;
+      z-index: 99999;
+      cursor: pointer;
+    }
+
+    .burger {
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 30px;
+      top: 30px;
+      right: 7px;
+      cursor: pointer;
+      z-index: 99999;
+    }
+  }
+
+  .phone-inner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #ededed;
+  }
+
+  .phone-overlay {
+    position: absolute;
+    background-image: url("../images/Phone.png");
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.nav {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  background: rgba(48, 28, 99, 1);
+  border: 1px solid black;
+  ul {
+
+    li {
+      padding: 8px;
+      border-bottom: 1px solid black;
+      font-family: Avenir-Medium;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+
+        a {
+          color: black;
+        }
+      }
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+a.button_purple {
+  display: block;
+  width: 250px;
+  color: #ffffff;
+  background-color: #2f1c5a;
+  text-align: center;
+  font-family: Avenir-Medium;
+  text-decoration: none;
+  padding: 16px 0;
+}
+
+.toggle {
+  position: absolute;
+  width: 38px;
+  height: 21px;
+  border-radius: 60px;
+  background: #FAFAFA;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+  &.inverted {
+    background: #432981;
+    .inner {
+      background: #FAFAFA;
+      box-shadow: none;
+    }
+  }
+
+  .inner {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    background: #432981;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+    transition: all 0.3s linear;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    .inner {
+      opacity: 0.5;
+      right: 18px;
+    }
+  }
+}
+
+.genders {
+  position: absolute;
+
+  span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    margin-right: 14px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+
+  .male {
+    background-image: url('../images/Icons/Male_off.png');
+    &.disabled {
+      background-image: url('../images/Icons/Male_on.png');
+    }
+  }
+
+  .female {
+    background-image: url('../images/Icons/Female_off.png');
+    &.disabled {
+      background-image: url('../images/Icons/Female_on.png');
+    }
+  }
+}
+input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: Avenir-Roman;
+  font-size: 16px;
+  line-height: 26px;
+
+  &:focus{
+    border: none;
+    outline: none;
+  }
+}
+
+.slider {
+
+  .rz-pointer {
+    top: -6px;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+
+    &:after {
+      display: none;
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
+
+    }
+  }
+
+  .rz-bubble {
+    display: none;
+  }
+
+  .rz-bar {
+    background-color: rgba(255, 255, 255, 0.4);
+    &.rz-selection {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+.error {
+  display: inline-block;
+  height: 26px;
+  width: 29px;
+  margin-left: 60px;
+  background-image: url('../images/InputError.png');
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.ng-enter {animation: enter 0.6s both ease-out;}
+.ng-enter.bottom {animation: enter-bottom 0.6s both ease-out;}
+.ng-leave {animation: leave 0.6s both ease-out;}
+.ng-leave.bottom {animation: leave-bottom 0.6s both ease-out;}
+

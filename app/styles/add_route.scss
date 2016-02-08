@@ -1,0 +1,105 @@
+.add_route {
+  height: 667px;
+  width: 100%;
+
+
+  .top  {
+    height: 207px;
+    width: 100%;
+    background-image: url('../images/add_routes/09_add_routes_top.png');
+    background-size: cover;
+  }
+
+  .middle {
+    position: relative;
+    height: 0;
+    width: 100%;
+    background-image: url('../images/add_routes/10_add_routes_train_middle.png');
+    background-size: cover;
+    transition: all 0.5s ease-in;
+
+    &.open {
+      height: 50px;
+    }
+
+    .edit {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      top: -78px;
+      right: 45px;
+      cursor: pointer;
+    }
+  }
+
+  .bottom {
+    position: relative;
+    height: 460px;
+    width: 100%;
+    background-image: url('../images/add_routes/09_add_routes_bottom.png');
+    background-size: cover;
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      .station {
+        height: 0;
+        width: 375px;
+        background-image: url('../images/add_routes/11_add_routes_station.png');
+        background-size: cover;
+        transition: all 0.3s ease-in;
+
+        &.show {
+          height: 667px;
+        }
+      }
+
+      .calender {
+        height: 0;
+        width: 375px;
+        background-image: url('../images/add_routes/12_add_routes_calender.png');
+        background-size: cover;
+        transition: all 0.3s ease-in;
+
+        &.show{
+         height: 461px;
+        }
+      }
+    }
+  }
+
+  input {
+    position: absolute;
+    color: #4A4A4A;
+    font-size: 20px;
+    width: 175px;
+  }
+
+  .start {
+    top: 56px;
+    left: 105px;
+  }
+
+  .end {
+    top: 134px;
+    left: 105px;
+  }
+
+  .time {
+    top: 263px;
+    left: 63px;
+    font-size: 18px;
+  }
+
+  .date {
+    top: 263px;
+    left: 220px;
+    font-size: 18px;
+  }
+
+  .button_purple {
+    position: absolute;
+    bottom: 44px;
+    left: 64px;
+  }
+}

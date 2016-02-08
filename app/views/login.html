@@ -1,0 +1,14 @@
+<div class="login view">
+    <form name="loginForm" novalidate role="form">
+        <div class="username">
+            <input type="email" name="username" ng-model="username" value="" required/>
+            <span class="error" ng-show="loginForm.$error.email || loginForm.email.$invalid"></span>
+        </div>
+        <div class="password">
+            <input type="password" name="password" ng-model="password" value="" required/>
+            <span class="error" ng-show="loginForm.$submitted && loginForm.password.$invalid"></span>
+        </div>
+    </form>
+    <input type="button" class="loginButton" ng-click="doLogin()" value=""/>
+    <div class="register" ng-click="register()"></div>
+</div>

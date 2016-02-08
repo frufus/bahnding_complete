@@ -1,0 +1,16 @@
+@keyframes enter {
+  0%      { left: -100%;  z-index: 0; opacity: 0;}
+  100%    { left: 0px; z-index: 9999; opacity: 1;}
+}
+@keyframes enter-bottom {
+  0%      { top: 100%;  z-index: 0; opacity: 0;}
+  100%    { top: 0; z-index: 9999; opacity: 1;}
+}
+@keyframes leave {
+  0%      { left: 0px; z-index: 9999; opacity: 1;}
+  100%    { left: 100%; z-index: 0;  opacity: 0;}
+}
+@keyframes leave-bottom {
+  0%      { top: 0px; z-index: 9999; opacity: 1;}
+  100%    { top: 100%; z-index: 0; opacity: 0;}
+}

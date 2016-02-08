@@ -1,0 +1,25 @@
+<div class="add_route">
+    <div class="top">
+
+    </div>
+    <div class="middle" toggle-class="open">
+        <div class="edit"></div>
+    </div>
+    <div class="bottom">
+        <form name="newRoute">
+            <input type="text" name="start_route" class="start" ng-model="newroute.start" ng-click="setStation()" />
+            <input type="text" name="end_route" class="end" ng-model="newroute.end" ng-click="setStation()"/>
+
+            <input type="time" class="time"/>
+            <input type="date" class="date" ng-click="setDate()"/>
+        </form>
+        <a class="button_purple" href="#/my_routes">Route hinzufügen</a>
+
+        <div class="overlay">
+            <div class="station {{stationClass}}" ng-click="setStation()"></div>
+            <div class="calender {{calenderClass}}" ng-click="setDate()"></div>
+        </div>
+
+    </div>
+
+</div>

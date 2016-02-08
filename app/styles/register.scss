@@ -1,0 +1,58 @@
+.register1 {
+  .name {
+    position: absolute;
+    top: 305px;
+    left: 66px;
+    font-size: 18px;
+    width: 145px;
+  }
+
+  .age {
+    position: absolute;
+    top: 305px;
+    left: 244px;
+    font-size: 18px;
+    width: 80px;
+  }
+
+  .things {
+    position: absolute;
+    top: 390px;
+    left: 66px;
+    font-size: 18px;
+    width: 245px;
+  }
+
+  .genders {
+    bottom: 138px;
+    left: 150px;
+  }
+
+  .button_purple {
+    position: absolute;
+    bottom: 44px;
+    left: 64px;
+  }
+}
+
+.register2 {
+  .button_purple {
+    position: absolute;
+    bottom: 44px;
+    left: 64px;
+  }
+
+  .toggle {
+    &.path {
+      top: 442px;
+      right: 64px;
+    }
+
+    &.location {
+      top: 490px;
+      right: 64px;
+    }
+  }
+
+
+}

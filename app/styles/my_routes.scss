@@ -1,0 +1,78 @@
+.my_routes {
+  .entrys{
+    position: absolute;
+    top: 87px;
+    left: 44px;
+
+    .entry {
+      position: relative;
+      height: 121px;
+      width: 282px;
+      margin-bottom: 30px;
+        .toggle {
+          top: 0;
+          right: 0;
+
+          &.disabled + .week {
+            display: none;
+          }
+        }
+    }
+  }
+  .button_purple {
+    position: absolute;
+    bottom: 44px;
+    left: 64px;
+  }
+
+  .week {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    width: 280px;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      height: 21px;
+      width: 21px;
+      background-size: cover;
+      cursor: pointer;
+      transition: all 0.3s linear;
+
+      &.m {
+        background-image: url('../images/Icons/M_off.png');
+        &.active {
+          background-image: url('../images/Icons/M_on.png');
+
+        }
+      }
+
+      &.d {
+        background-image: url('../images/Icons/D_off.png');
+        &.active {
+          background-image: url('../images/Icons/D_on.png');
+
+        }
+      }
+
+      &.f {
+        background-image: url('../images/Icons/F_off.png');
+        &.active {
+          background-image: url('../images/Icons/F_on.png');
+
+        }
+      }
+
+      &.s {
+        background-image: url('../images/Icons/S_off.png');
+        &.active {
+          background-image: url('../images/Icons/S_on.png');
+
+        }
+      }
+
+    }
+
+  }
+}

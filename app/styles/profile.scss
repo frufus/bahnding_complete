@@ -1,0 +1,41 @@
+.profile {
+
+  .inner {
+    height: 667px;
+    width: 100%;
+    background-image: url('../images/Profile/06_My_Profile.png');
+    background-size: cover;
+  }
+
+  .avatar {
+    position: absolute;
+    height: 105px;
+    width: 105px;
+    top: 101px;
+    left: 44px;
+    background-image: url('../images/Profile/avatar.jpg');
+    background-size: cover;
+    border-radius: 100%;
+    border: 5px solid #ffffff;
+    transition: all 0.5s linear;
+    cursor: pointer;
+
+    &.big {
+      top: 20px;
+      left: 0;
+      height: 375px;
+      width: 375px;
+      border-radius: 0%;
+    }
+  }
+  
+  .edit {
+    position: absolute;
+    display: block;
+    height: 55px;
+    width: 55px;
+    bottom: 20px;
+    left: 160px;
+  }
+
+}

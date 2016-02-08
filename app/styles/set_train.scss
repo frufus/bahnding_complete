@@ -1,0 +1,37 @@
+.set_train {
+  height: 667px;
+  width: 100%;
+  background-image: url('../images/14_set_train.png');
+  background-size: cover;
+
+  input {
+    position: absolute;
+    top: 410px;
+    left: 156px;
+    width: 80px;
+    text-align: center;
+    color: #4A4A4A;
+    font-size: 60px;
+    line-height: 50px;
+    font-family: Avenir-Black;
+  }
+
+  .wrong {
+    display: block;
+    position: absolute;
+    top: 583px;
+    left: 61px;
+    height: 36px;
+    width: 104px;
+    cursor: pointer;
+  }
+  .save {
+    display: block;
+    position: absolute;
+    top: 583px;
+    left: 211px;
+    height: 36px;
+    width: 104px;
+    cursor: pointer;
+  }
+}

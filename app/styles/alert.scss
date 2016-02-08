@@ -1,0 +1,23 @@
+.alert {
+
+  .ok {
+    display: block;
+    position: absolute;
+    top: 303px;
+    left: 211px;
+    height: 36px;
+    width: 94px;
+    background-image: url('../images/Alert/ok.png');
+    background-size: cover;
+  }
+  .abort {
+    display: block;
+    position: absolute;
+    top: 303px;
+    left: 71px;
+    height: 36px;
+    width: 94px;
+    background-image: url('../images/Alert/abort.png');
+    background-size: cover;
+  }
+}
